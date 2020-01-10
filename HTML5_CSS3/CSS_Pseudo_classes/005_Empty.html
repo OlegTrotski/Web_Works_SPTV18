@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>empty</title>
+	<style>
+		span:empty {
+			background: red;
+			padding: 3px;
+			margin: 7px;
+		}
+
+		span:empty::before {
+			content: "Пустой элемент";
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<span></span>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id odio id diam ornare feugiat. Aliquam sodales sem eu tortor tristique, vitae laoreet ligula vehicula. In pellentesque orci id dignissim ullamcorper.
+		<span></span>
+	</p>
+	
+</body>
+</html>
